@@ -8,9 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetierExo4Couches;
-using DataAccessExo4Couches;
 using CommonExo4Couches;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using DataAccessExo4Couches;
 
 namespace GGTexo4Couches
 {
@@ -19,10 +18,10 @@ namespace GGTexo4Couches
         public frmcategListe()
         {
             InitializeComponent();
-            LoadCategorie();
+            LoadUsers();
         }
 
-        private void LoadCategorie()
+        private void LoadUsers()
         {
             // Assuming you have a method to load users into the ListView
             DataTable dtUsers = GGTCATEGORIE08.SelectAll("");

@@ -1,5 +1,6 @@
 ﻿using System.Data;
 using System.Data.SqlClient;
+
 using CommonExo4Couches;
 namespace DataAccessExo4Couches
 {

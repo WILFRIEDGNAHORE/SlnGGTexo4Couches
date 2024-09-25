@@ -19,7 +19,8 @@ namespace CommonExo4Couches
         public static SqlConnection maDBConnection()
         {
             //définition de la chaine de connexion
-            string conxstr = @"Data Source=(local);Initial Catalog=bdExo4Couches;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
+            string conxstr = @"Data Source=(local);Initial Catalog=bdExo4Couches;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+
             SqlConnection conX = new SqlConnection(conxstr);
             return conX;
         }
