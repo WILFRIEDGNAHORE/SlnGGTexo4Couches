@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MetierExo4Couches
+namespace GGTexo4Couches
 {
-    public class Class1
+    class Divers
     {
     }
 }

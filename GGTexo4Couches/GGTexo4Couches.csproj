@@ -12,4 +12,10 @@
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CommonExo4Couches\CommonExo4Couches.csproj" />
+    <ProjectReference Include="..\DataAccessExo4Couches\DataAccessExo4Couches.csproj" />
+    <ProjectReference Include="..\MetierExo4Couches\MetierExo4Couches.csproj" />
+  </ItemGroup>
+
 </Project>
