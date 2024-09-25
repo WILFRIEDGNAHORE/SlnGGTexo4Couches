@@ -39,9 +39,6 @@
             listView = new ListView();
             ColumnHeader = new ColumnHeader();
             columnHeader1 = new ColumnHeader();
-            columnHeader2 = new ColumnHeader();
-            columnHeader3 = new ColumnHeader();
-            columnHeader4 = new ColumnHeader();
             SuspendLayout();
             // 
             // lblCount
@@ -55,52 +52,57 @@
             // 
             // btnUpd
             // 
-            btnUpd.Location = new Point(517, 471);
+            btnUpd.Location = new Point(317, 282);
             btnUpd.Name = "btnUpd";
             btnUpd.Size = new Size(120, 30);
             btnUpd.TabIndex = 17;
             btnUpd.Text = "Modifier";
             btnUpd.UseVisualStyleBackColor = true;
+            btnUpd.Click += btnUpd_Click;
             // 
             // btnShow
             // 
-            btnShow.Location = new Point(391, 471);
+            btnShow.Location = new Point(162, 282);
             btnShow.Name = "btnShow";
             btnShow.Size = new Size(120, 30);
             btnShow.TabIndex = 16;
             btnShow.Text = "Consulter";
             btnShow.UseVisualStyleBackColor = true;
+            btnShow.Click += btnShow_Click;
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(265, 471);
+            btnAdd.Location = new Point(12, 282);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(120, 30);
             btnAdd.TabIndex = 15;
             btnAdd.Text = "Ajouter";
             btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // btnDel
             // 
-            btnDel.Location = new Point(643, 471);
+            btnDel.Location = new Point(488, 282);
             btnDel.Name = "btnDel";
             btnDel.Size = new Size(120, 30);
             btnDel.TabIndex = 14;
             btnDel.Text = "Supprimer";
             btnDel.UseVisualStyleBackColor = true;
+            btnDel.Click += btnDel_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(800, 471);
+            button2.Location = new Point(633, 282);
             button2.Name = "button2";
             button2.Size = new Size(150, 30);
             button2.TabIndex = 13;
             button2.Text = "Fermer";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // label1
             // 
-            label1.Location = new Point(424, -11);
+            label1.Location = new Point(19, 232);
             label1.Name = "label1";
             label1.Size = new Size(100, 23);
             label1.TabIndex = 12;
@@ -109,19 +111,19 @@
             // 
             // txtFilter
             // 
-            txtFilter.Location = new Point(541, -11);
+            txtFilter.Location = new Point(141, 232);
             txtFilter.Name = "txtFilter";
             txtFilter.Size = new Size(409, 23);
             txtFilter.TabIndex = 11;
             // 
             // listView
             // 
-            listView.Columns.AddRange(new ColumnHeader[] { ColumnHeader, columnHeader1, columnHeader2, columnHeader3, columnHeader4 });
+            listView.Columns.AddRange(new ColumnHeader[] { ColumnHeader, columnHeader1 });
             listView.FullRowSelect = true;
             listView.GridLines = true;
             listView.Location = new Point(19, 23);
             listView.Name = "listView";
-            listView.Size = new Size(931, 442);
+            listView.Size = new Size(589, 191);
             listView.TabIndex = 10;
             listView.UseCompatibleStateImageBehavior = false;
             listView.View = View.Details;
@@ -136,26 +138,11 @@
             columnHeader1.Text = "Mot de passe";
             columnHeader1.Width = 120;
             // 
-            // columnHeader2
-            // 
-            columnHeader2.Text = "Nom et Prenoms";
-            columnHeader2.Width = 230;
-            // 
-            // columnHeader3
-            // 
-            columnHeader3.Text = "Role";
-            columnHeader3.Width = 150;
-            // 
-            // columnHeader4
-            // 
-            columnHeader4.Text = "Email";
-            columnHeader4.Width = 180;
-            // 
             // frmcategListe
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(969, 490);
+            ClientSize = new Size(970, 366);
             Controls.Add(lblCount);
             Controls.Add(btnUpd);
             Controls.Add(btnShow);
@@ -184,8 +171,5 @@
         private ListView listView;
         private ColumnHeader ColumnHeader;
         private ColumnHeader columnHeader1;
-        private ColumnHeader columnHeader2;
-        private ColumnHeader columnHeader3;
-        private ColumnHeader columnHeader4;
     }
 }

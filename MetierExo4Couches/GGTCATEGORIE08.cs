@@ -57,6 +57,21 @@ namespace MetierExo4Couches
             DataTable dt = undbUser.SelectAll(pUserNom);
             return dt;
         }
+        public void Insert()
+        {
+            dbGGTCATEGORIE08 undbuser = new dbGGTCATEGORIE08();
+            undbuser.Insert(this.MyStructure);
+        }
+        public void Update()
+        {
+            dbGGTCATEGORIE08 undbUser = new dbGGTCATEGORIE08();
+            undbUser.Update(this.MyStructure);
+        }
+        public void Supprimer(string pLogin)
+        {
+            dbGGTCATEGORIE08 undbUser = new dbGGTCATEGORIE08();
+            undbUser.Supprimer(pLogin);
+        }
 
         public GGTCATEGORIE08(string pLogin)
         {
